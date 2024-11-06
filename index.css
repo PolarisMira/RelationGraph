@@ -1,0 +1,210 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(255, 245, 218);
+    /* background-image: url(images/relation.png); */
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    gap: 15vh;
+}
+
+@media (max-width: 1000px) {
+
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+
+    #contents {
+        margin: 0px !important;
+    }
+
+    .main-output{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #main-output-1 {
+        margin-top: 50% !important;
+        padding: 10px !important;
+        transform: scale(1.5);
+    }
+
+    #main-output-h1 {
+        color: brown;
+        font-size: 70% !important;
+        height: fit-content !important;
+    }
+
+    #table-display {
+        display: none;
+    }
+}
+
+#contents {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+    width: 50vh;
+    height: 85vh;
+    background-color: rgb(238, 238, 238);
+    gap: 4vh;
+    box-shadow: 1px 1px 35px rgba(0, 0, 0, 0.231);
+    padding: 50px;
+    margin-left: 5.5vh;
+}
+
+#contents > div {
+    text-align: center;
+}
+
+#main-text-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.147);
+    width: 100%;
+    height: 30vh;
+    align-self: flex-start;
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.556);
+}
+
+#main-text {
+    font-size: 3.3em;
+    margin-bottom: 50px;
+    transition: transform .5s;
+}
+
+#main-text:hover {
+    transform: scale(.95);
+    cursor:default;
+}
+
+#main-text-svg {
+    margin-top: 50px;
+    transition: transform .5s;
+}
+
+#main-text-svg:hover {
+    transform: scale(1.1);
+    cursor:default;
+}
+
+#table {
+    height: 40vh;
+}
+
+.explanation {
+    font-size: 2em;
+    transition: all .5s;
+}
+
+.explanation:hover {
+    color: rgb(123, 0, 0);
+    cursor:default;
+    transform: scale(.96);
+}
+
+.italize {
+    font-size: .8em;
+    font-style: italic;
+}
+
+.main-input {
+    font-size: 1.4em;
+    width: 40.3vh;
+    padding: 15px;
+    height: 1.5vh;
+    border-radius: 15px;
+    transition: all 1s;
+    border: 2px solid rgba(0, 0, 0, 0.217);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.31);
+}
+
+#relation-input {
+    height: 2vh;
+}
+
+.main-input:hover {
+    background-color: rgba(252, 252, 170, 0.237);
+    width: 43.3vh;
+}
+
+#main-button {
+    font-size: 1.5em;
+    border-radius: 15px;
+    padding: 10px 25px;
+    background-color: rgba(193, 255, 193, 0.51);
+    transition: font-size .5s;
+}
+
+#main-button:hover {
+    background-color: rgba(146, 192, 146, 0.51);
+    font-size: 1.8em;
+}
+
+.main-output {
+    position: relative;
+    right: 50px;
+    width: 40vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#main-output-1 {
+    padding: 50px;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.313);
+    background-color: rgba(217, 198, 141, 0.342);
+    transition: transform .9s;
+}
+
+#main-output-1 > h1{
+    font-size: 2em;
+}
+
+#main-output-h1 {
+    font-family:'Courier New', Courier, monospace;
+    transition: color 4s ease-out;
+}
+
+#main-output-h1:hover {
+    color: rgb(0, 172, 72);
+}
+
+#main-output-1:hover {
+    transform: scale(1.02);
+}
+
+#main-output-2 > h1{
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+
+#table-display {
+    font-size: 4em;
+    transition: transform .5s;
+}
+
+#table-display:hover {
+    transform: scale(1.05);
+    cursor: default;
+}
